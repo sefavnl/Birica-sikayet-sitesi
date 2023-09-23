@@ -1,0 +1,277 @@
+ @import url('https://rsms.me/inter/inter-ui.css');
+body {
+  background: #172935;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+.page {
+  background: #172935;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+  text-align: center;
+}
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+  text-align: center;
+}
+.right {
+  background: #32788b;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+    margin-top: 1rem;
+  }
+}
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+svg {
+  position: absolute;
+  width: 320px;
+}
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+#submit {
+  color: black;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+#submit:focus {
+  color: #f2f2f2;
+}
+#submit:active {
+  color: #d0d0d2;
+}
+#firma {
+  color: #180148;
+  margin-top: 20px;
+  transition: color 300ms;
+}
+#firma:hover {
+  color: white;
+  background-color: #32788b;
+  border-radius: 15px 50px;
+  font-size: large;
+}
+#firma:active{
+  background-color: white;
+  color: #180148;
+}
+#signUp {
+  font-size: small;
+  color: black;
+  margin-top: 20px;
+  transition: color 300ms;
+}
+#signUp:hover {
+  font-size: large;
+  background-color: white;
+  border-radius: 15px 50px;
+}
+#signUp:active{
+  background-color: #32788b;
+}
+#openModal {
+  font-size: small;
+  color: black;
+  margin-top: 20px;
+  transition: color 300ms;
+}
+#openModal:hover {
+  font-size: large;
+  background-color: white;
+  border-radius: 15px 50px;
+}
+#openModal:active{
+  background-color: #32788b;
+}
+#modal{
+    position: fixed;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #32788b;
+    overflow: hidden;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+}
+.popUp{
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  text-align: center ;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+#modal input{
+  border: 2px solid #180148;
+  background-color:  #c2c2c5;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 70%;
+  margin-left: 40px;
+  font-size: 15px;
+  color:#172935;
+}
+#modal input:hover,
+#modal input:active{
+  border-color:#f2f2f2;
+}
+#modal #signUp{
+  border: 0;
+  font-size: small;
+  color: black;
+  margin-top: 20px;
+  transition: color 300ms;
+  background-color: #32788b;
+}
+#modal #signUp:hover {
+  font-size: large;
+  background-color: white;
+  border-radius: 15px 50px;
+}
+#modal #signUp:active{
+  background-color: #32788b;
+}
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1c5160;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 20px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:hover,
+button:active {
+  background-position: 0 0;
+  color: black;
+  background: rgb(252, 4, 4);
+
+}
+
+button:active {
+  opacity: .5;
+}
